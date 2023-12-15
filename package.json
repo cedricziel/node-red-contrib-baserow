@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "baserow": "baserow.js",
       "baserow-file": "baserow-file.js",
