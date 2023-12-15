@@ -1,6 +1,6 @@
 {
   "name": "@cedricziel/node-red-contrib-baserow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeRED nodes for baserow",
   "keywords": [
     "node-red"
@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "node-red": {
     "version": ">=2.0.0",
     "nodes": {
