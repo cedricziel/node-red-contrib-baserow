@@ -7,10 +7,12 @@
   ],
   "files": [
     "examples",
-    "baserow.js",
-    "baserow.html",
-    "baserow-file.html",
+    "baserow-credentials.js",
+    "baserow-credentials.html",
+    "baserow-listen.js",
+    "baserow-listen.html",
     "baserow-file.js",
+    "baserow-file.html",
     "baserow-row.js",
     "baserow-row.html",
     "baserow.png"
@@ -23,8 +25,9 @@
   "node-red": {
     "version": ">=2.0.0",
     "nodes": {
-      "baserow": "baserow.js",
+      "baserow-credentials": "baserow-credentials.js",
       "baserow-file": "baserow-file.js",
+      "baserow-listen": "baserow-listen.js",
       "baserow-row": "baserow-row.js"
     }
   },
@@ -32,6 +35,8 @@
     "prettier": "3.1.1"
   },
   "dependencies": {
-    "axios": "^1.6.2"
+    "axios": "^1.6.2",
+    "url": "^0.11.3",
+    "ws": "^8.15.1"
   }
 }

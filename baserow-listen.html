@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('baserow',{
+    RED.nodes.registerType('baserow-listen',{
         category: 'baserow',
         color: '#00752f',
         defaults: {
@@ -7,18 +7,22 @@
             creds: {
                 value: "",
                 type: 'baserowCredentials',
-            }
+            },
+            wholemsg: {value:"false"},
+            page: {value:"table"},
+            tableId: {value:""},
+            rowId: {value:""},
         },
-        inputs: 1,
+        inputs: 0,
         outputs: 1,
         icon: "baserow.png",
         label: function() {
-            return this.name || "Baserow";
+            return this.name || "Baserow Listen";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="baserow">
+<script type="text/html" data-template-name="baserow-listen">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -28,9 +32,35 @@
         <label for="node-input-creds"> <i class="fa fa-key fa-fw"></i> API key</span></label>
         <input type="text" id="node-input-creds">
     </div>
+
+    <div class="form-row">
+        <label for="node-config-input-page"> Subject</label>
+        <select id="node-config-input-page" style="width: 70%;">
+            <option value="table"> Table</option>
+            <option value="row"> Row</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-tableId"> <i class="fa fa-key fa-fw"></i> Table ID</span></label>
+        <input type="text" id="node-config-input-tableId">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-rowId"> <i class="fa fa-key fa-fw"></i> Row ID</span></label>
+        <input type="text" id="node-config-input-rowId">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-wholemsg"> Whole message?</label>
+        <select type="text" id="node-config-input-wholemsg" style="width: 70%;">
+            <option value="false"> Payload</option>
+            <option value="true"> Message</option>
+        </select>
+    </div>
 </script>
 
-<script type="text/html" data-help-name="baserow">
+<script type="text/html" data-help-name="baserow-listen">
     <p>A node that allows communicating with baserow instances</p>
 
     <p>Summary of the node.</p>
@@ -48,43 +78,4 @@
         <dt class="optional">topic<span class="property-type">string</span></dt>
         <dd>Explanation of topic.</dd>
     </dl>
-</script>
-
-<script type="text/x-red" data-template-name="baserowCredentials">
-    <div class="form-row">
-        <label for="node-input-name"> <i class="fa fa-tag fa-fw"></i> Name</label>
-        <input type="text" id="node-config-input-name" placeholder="Name">
-    </div>
-
-    <div class="form-row">
-      <label for="node-config-input-username"> User</label>
-      <input type="text" id="node-config-input-username" placeholder="mail@example.com">
-    </div>
-
-    <div class="form-row">
-      <label for="node-config-input-password"> Password</label>
-      <input type="password" id="node-config-input-password" placeholder="***">
-    </div>
-
-    <div class="form-row">
-      <label for="node-config-input-url"> API URL</label>
-      <input type="text" id="node-config-input-url" placeholder="https://api.baserow.io">
-    </div>
-</script>
-
-<script type="text/javascript">
-    RED.nodes.registerType('baserowCredentials', {
-        category: 'config',
-        defaults: {
-            name: {value: ""},
-        },
-        credentials: {
-            username: {},
-            password: {},
-            url: {}
-        },
-        label: function () {
-            return this.name || 'Baserow Token';
-        }
-    });
 </script>
