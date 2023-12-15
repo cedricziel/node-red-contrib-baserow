@@ -1,0 +1,82 @@
+<script type="text/javascript">
+    RED.nodes.registerType('baserow-file',{
+        category: 'baserow',
+        color: '#00752f',
+        defaults: {
+            name: {value:""},
+            creds: {
+                value: "",
+                type: 'baserowCredentials',
+            },
+            tableId: {value:""},
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "baserow.png",
+        label: function() {
+            return this.name || "File";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="baserow-file">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-creds"> <i class="fa fa-key fa-fw"></i> Credentials</span></label>
+        <input type="text" id="node-input-creds">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-operation"><i class="fa fa-table"></i> Operation</label>
+        <select id="node-input-operation">
+            <option value="upload">upload</option>
+            <option value="upload_via_url">upload_via_url</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-file"><i class="fa fa-file"></i> File</label>
+        <input type="file" id="node-input-file" placeholder="File">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-url"><i class="fa fa-browser"></i> File</label>
+        <input type="text" id="node-input-url" placeholder="https://example.com/foo.png">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="baserow-file">
+    <p>A node that allows uploading files to baserow instances</p>
+
+    <p>Summary of the node.</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>operation<span class="property-type">string</span></dt>
+        <dd>The operation to perform. One of create, update, move, delete</dd>
+        <dt>tableId<span class="property-type">string</span></dt>
+        <dd>The table to operate on</dd>
+        <dt>rowId<span class="property-type">string</span></dt>
+        <dd>The row id to operate on</dd>
+        <dt>payload<span class="property-type">string</span></dt>
+        <dd>
+            The payload to send.
+            <pre>
+{
+    "Name": "string",
+    "Nachname": "string",
+    "Anmerkungen": "string",
+    "Aktiv": true
+}
+            </pre>
+        </dd>
+    </dl>
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload<span class="property-type">object</span></dt>
+        <dd>Explanation of payload.</dd>
+    </dl>
+</script>

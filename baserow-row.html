@@ -1,0 +1,95 @@
+<script type="text/javascript">
+    RED.nodes.registerType('baserow-row',{
+        category: 'baserow',
+        color: '#00752f',
+        defaults: {
+            name: {value:""},
+            creds: {
+                value: "",
+                type: 'baserowCredentials',
+            },
+            tableId: {value:""},
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "baserow.png",
+        label: function() {
+            return this.name || "Row";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="baserow-row">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-creds"> <i class="fa fa-key fa-fw"></i> Credentials</span></label>
+        <input type="text" id="node-input-creds">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-tableId"><i class="fa fa-table"></i> Table ID</label>
+        <input type="text" id="node-input-tableId" placeholder="1234">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-rowId"><i class="fa fa-table"></i> Row ID</label>
+        <input type="text" id="node-input-rowId" placeholder="1234">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-beforeId"><i class="fa fa-table"></i> Before ID</label>
+        <input type="text" id="node-input-beforeId" placeholder="1234">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-operation"><i class="fa fa-table"></i> Operation</label>
+        <select id="node-input-operation">
+            <option value="get">get</option>
+            <option value="create">create</option>
+            <option value="update">update</option>
+            <option value="move">move</option>
+            <option value="delete">delete</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-userFieldNames"><i class="fa fa-user"></i> Use user field names?</label>
+        <input type="checkbox" id="node-input-userFieldNames" placeholder="Table ID">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="baserow-row">
+    <p>A node that allows communicating with baserow instances</p>
+
+    <p>Summary of the node.</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>operation<span class="property-type">string</span></dt>
+        <dd>The operation to perform. One of create, update, move, delete</dd>
+        <dt>tableId<span class="property-type">string</span></dt>
+        <dd>The table to operate on</dd>
+        <dt>rowId<span class="property-type">string</span></dt>
+        <dd>The row id to operate on</dd>
+        <dt>payload<span class="property-type">string</span></dt>
+        <dd>
+            The payload to send.
+            <pre>
+{
+    "Name": "string",
+    "Nachname": "string",
+    "Anmerkungen": "string",
+    "Aktiv": true
+}
+            </pre>
+        </dd>
+    </dl>
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload<span class="property-type">object</span></dt>
+        <dd>Explanation of payload.</dd>
+    </dl>
+</script>

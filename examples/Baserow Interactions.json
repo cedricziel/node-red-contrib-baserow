@@ -1,0 +1,448 @@
+[
+  {
+    "id": "fde55bf9b6ac69d6",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "2fbfb2278a49249f",
+    "type": "baserow-row",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "642",
+    "x": 550,
+    "y": 200,
+    "wires": [
+      [
+        "c80d2cfbec0e124b",
+        "845fade2fab3c750"
+      ]
+    ]
+  },
+  {
+    "id": "0df6867193e5d9fb",
+    "type": "inject",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 180,
+    "y": 200,
+    "wires": [
+      [
+        "142fa53516a06510"
+      ]
+    ]
+  },
+  {
+    "id": "142fa53516a06510",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "prepareCreate",
+    "func": "msg.operation = 'create';\nmsg.userFieldNames = true;\nmsg.tableId = 642;\nmsg.payload = {};\nmsg.payload['Name'] = 'foo';\nmsg.payload['Nachname'] = 'foo';\nmsg.payload['Anmerkungen'] = 'foo';\nmsg.payload['Aktiv'] = 'true';\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 380,
+    "y": 200,
+    "wires": [
+      [
+        "2fbfb2278a49249f"
+      ]
+    ]
+  },
+  {
+    "id": "c80d2cfbec0e124b",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 1",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "845fade2fab3c750",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "updateRow",
+    "func": "flow.set(\"rowId\", msg.payload.id);\n\nmsg.operation = 'update';\nmsg.userFieldNames = true;\nmsg.tableId = 642;\nmsg.rowId = flow.get(\"rowId\");\nmsg.payload = {};\nmsg.payload['Name'] = 'foo bar';\nmsg.payload['Nachname'] = 'foo bar';\nmsg.payload['Anmerkungen'] = 'foo bar';\nmsg.payload['Aktiv'] = false;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 370,
+    "y": 300,
+    "wires": [
+      [
+        "3cf2f3f4fa45dfb1"
+      ]
+    ]
+  },
+  {
+    "id": "3cf2f3f4fa45dfb1",
+    "type": "baserow-row",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 300,
+    "wires": [
+      [
+        "fae7f82e1c8a50d4",
+        "49ed69809a4a2851"
+      ]
+    ]
+  },
+  {
+    "id": "fae7f82e1c8a50d4",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 2",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 300,
+    "wires": []
+  },
+  {
+    "id": "27841201319cb085",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "deleteRow",
+    "func": "msg.operation = 'delete';\nmsg.tableId = 642;\nmsg.rowId = flow.get(\"rowId\");\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 370,
+    "y": 860,
+    "wires": [
+      [
+        "e4b4aa7f0a5cc2c8"
+      ]
+    ]
+  },
+  {
+    "id": "e4b4aa7f0a5cc2c8",
+    "type": "baserow-row",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 860,
+    "wires": [
+      [
+        "96c0672dafa35970"
+      ]
+    ]
+  },
+  {
+    "id": "96c0672dafa35970",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 3",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 860,
+    "wires": []
+  },
+  {
+    "id": "49ed69809a4a2851",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "uploadFileFromUrl",
+    "func": "msg.operation = 'upload_via_url';\nmsg.payload = {};\nmsg.payload['url'] = 'https://placehold.co/600x400.png';\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 390,
+    "y": 380,
+    "wires": [
+      [
+        "77f8d8b799d52890"
+      ]
+    ]
+  },
+  {
+    "id": "77f8d8b799d52890",
+    "type": "baserow-file",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 380,
+    "wires": [
+      [
+        "c3158ab935fa1585",
+        "efe36e73add3fc99"
+      ]
+    ]
+  },
+  {
+    "id": "6240787991f25b03",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "uploadFile",
+    "func": "msg.operation = 'upload_via_url';\nmsg.payload = {};\nmsg.payload['url'] = 'https://placehold.co/600x400';\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 370,
+    "y": 660,
+    "wires": [
+      [
+        "07f4cdfd1170c310"
+      ]
+    ]
+  },
+  {
+    "id": "07f4cdfd1170c310",
+    "type": "baserow-file",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 660,
+    "wires": [
+      [
+        "7667da51fbcb8e3c",
+        "c3e1dbadbc739bfc"
+      ]
+    ]
+  },
+  {
+    "id": "c3158ab935fa1585",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 4",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "6e280f015b1023c8",
+    "type": "http request",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "method": "GET",
+    "ret": "bin",
+    "paytoqs": "ignore",
+    "url": "https://placehold.co/600x401.png",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "insecureHTTPParser": false,
+    "authType": "",
+    "senderr": false,
+    "headers": [],
+    "x": 370,
+    "y": 580,
+    "wires": [
+      [
+        "6240787991f25b03",
+        "73268def813f16a0"
+      ]
+    ]
+  },
+  {
+    "id": "73268def813f16a0",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 5",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "7667da51fbcb8e3c",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 6",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "efe36e73add3fc99",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "updateRowWithFile",
+    "func": "var payload = msg.payload;\n\nmsg.operation = 'update';\nmsg.userFieldNames = true;\nmsg.tableId = 642;\nmsg.rowId = flow.get(\"rowId\");\nmsg.payload = {};\nmsg.payload['Datei'] = [payload];\n\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 390,
+    "y": 480,
+    "wires": [
+      [
+        "f6be31ec63d2147e"
+      ]
+    ]
+  },
+  {
+    "id": "4f13848a18a12510",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 7",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "f6be31ec63d2147e",
+    "type": "baserow-row",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 480,
+    "wires": [
+      [
+        "4f13848a18a12510",
+        "6e280f015b1023c8"
+      ]
+    ]
+  },
+  {
+    "id": "c3e1dbadbc739bfc",
+    "type": "function",
+    "z": "fde55bf9b6ac69d6",
+    "name": "updateRowWithFile",
+    "func": "var payload = msg.payload;\n\nmsg.operation = 'update';\nmsg.userFieldNames = true;\nmsg.tableId = 642;\nmsg.rowId = flow.get(\"rowId\");\nmsg.payload = {};\nmsg.payload['Datei'] = [payload];\n\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 390,
+    "y": 740,
+    "wires": [
+      [
+        "dc3d518eacab90a6"
+      ]
+    ]
+  },
+  {
+    "id": "07c5878f90528af7",
+    "type": "debug",
+    "z": "fde55bf9b6ac69d6",
+    "name": "debug 8",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 780,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "dc3d518eacab90a6",
+    "type": "baserow-row",
+    "z": "fde55bf9b6ac69d6",
+    "name": "",
+    "creds": "5ab24e3965174a3b",
+    "tableId": "",
+    "x": 550,
+    "y": 740,
+    "wires": [
+      [
+        "07c5878f90528af7",
+        "27841201319cb085"
+      ]
+    ]
+  },
+  {
+    "id": "5ab24e3965174a3b",
+    "type": "baserowCredentials",
+    "name": "Baserow Host"
+  }
+]

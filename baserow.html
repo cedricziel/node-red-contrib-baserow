@@ -1,0 +1,90 @@
+<script type="text/javascript">
+    RED.nodes.registerType('baserow',{
+        category: 'baserow',
+        color: '#00752f',
+        defaults: {
+            name: {value:""},
+            creds: {
+                value: "",
+                type: 'baserowCredentials',
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "baserow.png",
+        label: function() {
+            return this.name || "Baserow";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="baserow">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-creds"> <i class="fa fa-key fa-fw"></i> API key</span></label>
+        <input type="text" id="node-input-creds">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="baserow">
+    <p>A node that allows communicating with baserow instances</p>
+
+    <p>Summary of the node.</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>resource<span class="property-type">string</span></dt>
+        <dd>The resource to call. For example <pre>database/rows/table/642/</pre></dd>
+        <dt>method<span class="property-type">string</span></dt>
+        <dd>The operation to perform. Can be <pre>get</pre>, <pre>put</pre>, <pre>post</pre></dd>
+    </dl>
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload<span class="property-type">object</span></dt>
+        <dd>Explanation of payload.</dd>
+        <dt class="optional">topic<span class="property-type">string</span></dt>
+        <dd>Explanation of topic.</dd>
+    </dl>
+</script>
+
+<script type="text/x-red" data-template-name="baserowCredentials">
+    <div class="form-row">
+        <label for="node-input-name"> <i class="fa fa-tag fa-fw"></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+      <label for="node-config-input-username"> User</label>
+      <input type="text" id="node-config-input-username" placeholder="mail@example.com">
+    </div>
+
+    <div class="form-row">
+      <label for="node-config-input-password"> Password</label>
+      <input type="password" id="node-config-input-password" placeholder="***">
+    </div>
+
+    <div class="form-row">
+      <label for="node-config-input-url"> API URL</label>
+      <input type="text" id="node-config-input-url" placeholder="https://api.baserow.io">
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('baserowCredentials', {
+        category: 'config',
+        defaults: {
+            name: {value: ""},
+        },
+        credentials: {
+            username: {},
+            password: {},
+            url: {}
+        },
+        label: function () {
+            return this.name || 'Baserow Token';
+        }
+    });
+</script>
