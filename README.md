@@ -1,10 +1,10 @@
-# Node RED nodes for interacting with Baserow
+# Node-RED nodes for baserow
 
-This package hosts nodes to work with baserow.
+## Install
 
-It can:
-* CRUD rows
-* Upload & Upload via URL files
+```shell
+npm i @cedricziel/node-red-contrib-baserow
+```
 
 ## License
 
