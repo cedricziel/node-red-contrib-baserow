@@ -1,8 +1,18 @@
 version: 2
 updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix: update "
+    assignees:
+      - cedricziel
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "fix: update "
     assignees:
       - cedricziel
