@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.0](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.0.7...v0.1.0) (2024-08-07)
+
+
+### Features
+
+* add CI workflow ([#22](https://github.com/cedricziel/node-red-contrib-baserow/issues/22)) ([df5c37b](https://github.com/cedricziel/node-red-contrib-baserow/commit/df5c37b40c701c7bec6e0798ea488e9a28d25f70))
+
+
+### Bug Fixes
+
+* update bump actions/checkout from 2 to 4 ([#25](https://github.com/cedricziel/node-red-contrib-baserow/issues/25)) ([770392b](https://github.com/cedricziel/node-red-contrib-baserow/commit/770392b3cf242a4d2c62d2491dbd146de885b14a))
+* update bump actions/setup-node from 2 to 4 ([#26](https://github.com/cedricziel/node-red-contrib-baserow/issues/26)) ([9a5ee84](https://github.com/cedricziel/node-red-contrib-baserow/commit/9a5ee8401578578455b700074cc86603298c2cce))
+* update bump axios from 1.7.2 to 1.7.3 ([#23](https://github.com/cedricziel/node-red-contrib-baserow/issues/23)) ([8bc6793](https://github.com/cedricziel/node-red-contrib-baserow/commit/8bc6793435f640b3eab460a2509377c90629d8c9))
+
 ## [0.0.7](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.0.6...v0.0.7) (2024-07-28)
 
 

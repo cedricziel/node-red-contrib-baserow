@@ -1,6 +1,6 @@
 {
   "name": "@cedricziel/node-red-contrib-baserow",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "NodeRED nodes for baserow",
   "keywords": [
     "node-red"
