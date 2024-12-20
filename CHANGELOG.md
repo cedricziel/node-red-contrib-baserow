@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.1](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.0...v0.1.1) (2024-12-20)
+
+
+### Bug Fixes
+
+* update bump axios from 1.7.7 to 1.7.8 ([#37](https://github.com/cedricziel/node-red-contrib-baserow/issues/37)) ([14f7e47](https://github.com/cedricziel/node-red-contrib-baserow/commit/14f7e47c848f59419cbd491d5a988da6ecd77d9b))
+* update bump axios from 1.7.8 to 1.7.9 ([#42](https://github.com/cedricziel/node-red-contrib-baserow/issues/42)) ([1aaa1df](https://github.com/cedricziel/node-red-contrib-baserow/commit/1aaa1dfaa666b79ffd3dda665e37f10ab4dd6e19))
+* update bump node-red from 4.0.5 to 4.0.7 ([#44](https://github.com/cedricziel/node-red-contrib-baserow/issues/44)) ([e16e13a](https://github.com/cedricziel/node-red-contrib-baserow/commit/e16e13a3880cdc2940d1bf5b4a863390c832a426))
+* update bump prettier from 3.3.3 to 3.4.1 ([#39](https://github.com/cedricziel/node-red-contrib-baserow/issues/39)) ([432da36](https://github.com/cedricziel/node-red-contrib-baserow/commit/432da36d4ecea483c6d9db33d8d0a53446a5935c))
+* update bump prettier from 3.4.1 to 3.4.2 ([#41](https://github.com/cedricziel/node-red-contrib-baserow/issues/41)) ([de7964a](https://github.com/cedricziel/node-red-contrib-baserow/commit/de7964a5def2c478dfe295c15a9ffe58541fe3ab))
+
 ## [0.1.0](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.0.7...v0.1.0) (2024-10-12)
 
 
