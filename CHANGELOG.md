@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.3](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.2...v0.1.3) (2026-03-08)
+
+
+### Bug Fixes
+
+* update bump actions/checkout from 4 to 6 ([#60](https://github.com/cedricziel/node-red-contrib-baserow/issues/60)) ([e8f56f8](https://github.com/cedricziel/node-red-contrib-baserow/commit/e8f56f8f5a3587541003f22a258746d5ac32a605))
+* update bump actions/setup-node from 4 to 6 ([#61](https://github.com/cedricziel/node-red-contrib-baserow/issues/61)) ([cd6eddd](https://github.com/cedricziel/node-red-contrib-baserow/commit/cd6eddd2a43673d80e5ee9324fca3f9b1783652f))
+* update bump amannn/action-semantic-pull-request from 5 to 6 ([#59](https://github.com/cedricziel/node-red-contrib-baserow/issues/59)) ([4efaef6](https://github.com/cedricziel/node-red-contrib-baserow/commit/4efaef69a8be7a5c8050e8de01150446f22e9a9d))
+* update bump mocha from 11.1.0 to 11.7.5 ([#65](https://github.com/cedricziel/node-red-contrib-baserow/issues/65)) ([4b94517](https://github.com/cedricziel/node-red-contrib-baserow/commit/4b945171dbe82addb2527ff5f1c446094788b46b))
+* update bump node-red-node-test-helper from 0.3.4 to 0.3.6 ([#66](https://github.com/cedricziel/node-red-contrib-baserow/issues/66)) ([2fff87c](https://github.com/cedricziel/node-red-contrib-baserow/commit/2fff87cbaf965b1e2c03df2959d6647abd1bb10e))
+* update bump prettier from 3.5.3 to 3.8.1 ([#64](https://github.com/cedricziel/node-red-contrib-baserow/issues/64)) ([080f756](https://github.com/cedricziel/node-red-contrib-baserow/commit/080f7563b7bdfa8489e4074a944b05ede7ebe555))
+* update bump ws from 8.18.1 to 8.19.0 ([#63](https://github.com/cedricziel/node-red-contrib-baserow/issues/63)) ([e04a06e](https://github.com/cedricziel/node-red-contrib-baserow/commit/e04a06e30b7cc70a02ae7188d702d1a1866e544d))
+
 ## [0.1.2](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.1...v0.1.2) (2026-03-06)
 
 
