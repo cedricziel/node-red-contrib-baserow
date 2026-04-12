@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.7](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.6...v0.1.7) (2026-04-12)
+
+
+### Bug Fixes
+
+* update bump axios from 1.13.6 to 1.15.0 ([#75](https://github.com/cedricziel/node-red-contrib-baserow/issues/75)) ([dd7fef4](https://github.com/cedricziel/node-red-contrib-baserow/commit/dd7fef4a9635175fba4cf13b9764e0fc63573d43))
+* update bump prettier from 3.8.1 to 3.8.2 ([#76](https://github.com/cedricziel/node-red-contrib-baserow/issues/76)) ([9c2cab4](https://github.com/cedricziel/node-red-contrib-baserow/commit/9c2cab442936b2e650c1518df586e11096919ae6))
+
 ## [0.1.6](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.5...v0.1.6) (2026-03-24)
 
 
