@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.7...v0.1.8) (2026-04-13)
+
+
+### Bug Fixes
+
+* update bump node-red from 4.1.7 to 4.1.8 ([#73](https://github.com/cedricziel/node-red-contrib-baserow/issues/73)) ([8a03018](https://github.com/cedricziel/node-red-contrib-baserow/commit/8a03018fef5fa2ab78a6005c157ef07084820941))
+
 ## [0.1.7](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.6...v0.1.7) (2026-04-12)
 
 
