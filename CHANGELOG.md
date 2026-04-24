@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.11](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.10...v0.1.11) (2026-04-24)
+
+
+### Bug Fixes
+
+* update bump axios from 1.15.1 to 1.15.2 ([#83](https://github.com/cedricziel/node-red-contrib-baserow/issues/83)) ([9fa0f89](https://github.com/cedricziel/node-red-contrib-baserow/commit/9fa0f89013efe9ca0a240e61fecf20274e09d6c1))
+* update bump googleapis/release-please-action from 4 to 5 ([#84](https://github.com/cedricziel/node-red-contrib-baserow/issues/84)) ([f05b120](https://github.com/cedricziel/node-red-contrib-baserow/commit/f05b120ca9da6289776ce0f0bef6141fd8aa154c))
+
 ## [0.1.10](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.9...v0.1.10) (2026-04-21)
 
 
