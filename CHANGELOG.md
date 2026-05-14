@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.14...v0.1.15) (2026-05-14)
+
+
+### Bug Fixes
+
+* update bump ws from 8.20.0 to 8.20.1 ([#92](https://github.com/cedricziel/node-red-contrib-baserow/issues/92)) ([9f177db](https://github.com/cedricziel/node-red-contrib-baserow/commit/9f177db1e1c0d9f48ecef50283d2fba75913ece7))
+
 ## [0.1.14](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.13...v0.1.14) (2026-05-12)
 
 
