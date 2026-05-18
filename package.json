@@ -3,8 +3,20 @@
   "version": "0.1.16",
   "description": "NodeRED nodes for baserow",
   "keywords": [
-    "node-red"
+    "node-red",
+    "baserow",
+    "database",
+    "low-code",
+    "no-code"
   ],
+  "homepage": "https://github.com/cedricziel/node-red-contrib-baserow#readme",
+  "bugs": {
+    "url": "https://github.com/cedricziel/node-red-contrib-baserow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedricziel/node-red-contrib-baserow.git"
+  },
   "files": [
     "examples",
     "baserow-credentials.js",
@@ -20,7 +32,7 @@
   "scripts": {
     "test": "mocha \"test/**/*_spec.js\""
   },
-  "author": "",
+  "author": "Cedric Ziel <cedric@cedric-ziel.com>",
   "license": "MIT",
   "node-red": {
     "version": ">=2.0.0",
