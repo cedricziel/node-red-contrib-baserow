@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.18](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.17...v0.1.18) (2026-05-18)
+
+
+### Bug Fixes
+
+* **ci:** publish npm package with provenance attestation ([#99](https://github.com/cedricziel/node-red-contrib-baserow/issues/99)) ([c34f5f1](https://github.com/cedricziel/node-red-contrib-baserow/commit/c34f5f163a5369df7929999c1263f123e691baea))
+
 ## [0.1.17](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.16...v0.1.17) (2026-05-18)
 
 
