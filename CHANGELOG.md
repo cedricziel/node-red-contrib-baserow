@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.17](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.16...v0.1.17) (2026-05-18)
+
+
+### Bug Fixes
+
+* **ci:** bump Node to 22 for the publish step ([#97](https://github.com/cedricziel/node-red-contrib-baserow/issues/97)) ([c5c8594](https://github.com/cedricziel/node-red-contrib-baserow/commit/c5c8594959d90ccde182dec104db476855504214))
+
 ## [0.1.16](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.15...v0.1.16) (2026-05-16)
 
 
