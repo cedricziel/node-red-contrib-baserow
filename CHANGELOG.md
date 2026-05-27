@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.19](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.18...v0.1.19) (2026-05-27)
+
+
+### Bug Fixes
+
+* update bump mocha from 11.7.5 to 11.7.6 ([#101](https://github.com/cedricziel/node-red-contrib-baserow/issues/101)) ([6fd22b5](https://github.com/cedricziel/node-red-contrib-baserow/commit/6fd22b5ef9eecb154b58fb7e5f4a180b1651009f))
+* update bump ws from 8.20.1 to 8.21.0 ([#102](https://github.com/cedricziel/node-red-contrib-baserow/issues/102)) ([53aa028](https://github.com/cedricziel/node-red-contrib-baserow/commit/53aa028656a629c7983f4fa49aaee0bfd0fdee4e))
+
 ## [0.1.18](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.17...v0.1.18) (2026-05-18)
 
 
