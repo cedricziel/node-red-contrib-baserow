@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.20](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.19...v0.1.20) (2026-06-04)
+
+
+### Bug Fixes
+
+* update bump axios from 1.16.1 to 1.17.0 ([#104](https://github.com/cedricziel/node-red-contrib-baserow/issues/104)) ([c75f631](https://github.com/cedricziel/node-red-contrib-baserow/commit/c75f6318823c763f37b9a02d7b815f7889a8648b))
+
 ## [0.1.19](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.18...v0.1.19) (2026-05-27)
 
 
