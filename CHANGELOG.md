@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.23](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.22...v0.1.23) (2026-06-20)
+
+
+### Bug Fixes
+
+* update bump actions/checkout from 6 to 7 ([#113](https://github.com/cedricziel/node-red-contrib-baserow/issues/113)) ([684e0b4](https://github.com/cedricziel/node-red-contrib-baserow/commit/684e0b46dc148ee1f176ab6712cf118727398591))
+* update bump axios from 1.17.0 to 1.18.0 ([#111](https://github.com/cedricziel/node-red-contrib-baserow/issues/111)) ([c223822](https://github.com/cedricziel/node-red-contrib-baserow/commit/c2238223e46972d3769b7e1020618b552f2ae36d))
+
 ## [0.1.22](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.21...v0.1.22) (2026-06-11)
 
 
