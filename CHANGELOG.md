@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.26](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.25...v0.1.26) (2026-07-15)
+
+
+### Bug Fixes
+
+* update bump actions/setup-node from 6 to 7 ([#122](https://github.com/cedricziel/node-red-contrib-baserow/issues/122)) ([e3c6453](https://github.com/cedricziel/node-red-contrib-baserow/commit/e3c64531568bdd1948500f3f2a04c4ef74b6c4ef))
+* update bump prettier from 3.9.4 to 3.9.5 ([#120](https://github.com/cedricziel/node-red-contrib-baserow/issues/120)) ([c81649c](https://github.com/cedricziel/node-red-contrib-baserow/commit/c81649cf33ffe59809a684ee1a03fe10f597e4da))
+
 ## [0.1.25](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.24...v0.1.25) (2026-07-01)
 
 
