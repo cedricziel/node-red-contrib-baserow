@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.27](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.26...v0.1.27) (2026-07-22)
+
+
+### Bug Fixes
+
+* update bump prettier from 3.9.5 to 3.9.6 ([#125](https://github.com/cedricziel/node-red-contrib-baserow/issues/125)) ([e3a2afb](https://github.com/cedricziel/node-red-contrib-baserow/commit/e3a2afb2e683f30255c784da16b439a8cc63a3e4))
+* update bump ws from 8.21.0 to 8.21.1 ([#123](https://github.com/cedricziel/node-red-contrib-baserow/issues/123)) ([215f4fe](https://github.com/cedricziel/node-red-contrib-baserow/commit/215f4fe2986038ad915d9716c3bbc731658b2f8f))
+
 ## [0.1.26](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.25...v0.1.26) (2026-07-15)
 
 
