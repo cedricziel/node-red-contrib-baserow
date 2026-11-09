@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.36](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.35...v0.1.36) (2026-11-09)
+
+
+### Bug Fixes
+
+* update bump axios from 1.20.0 to 1.21.0 ([#154](https://github.com/cedricziel/node-red-contrib-baserow/issues/154)) ([c2396ae](https://github.com/cedricziel/node-red-contrib-baserow/commit/c2396ae7c59ce7c62eb05e5043789a47519908f2))
+* update bump node-red from 4.1.11 to 5.0.9 ([#153](https://github.com/cedricziel/node-red-contrib-baserow/issues/153)) ([39c8b03](https://github.com/cedricziel/node-red-contrib-baserow/commit/39c8b0329b9bfb80424dc7a381948a5842208274))
+* update bump ws from 8.22.0 to 8.22.1 ([#156](https://github.com/cedricziel/node-red-contrib-baserow/issues/156)) ([9144a6b](https://github.com/cedricziel/node-red-contrib-baserow/commit/9144a6b38a989a729f435a5ffa007c71778197a7))
+
 ## [0.1.35](https://github.com/cedricziel/node-red-contrib-baserow/compare/v0.1.34...v0.1.35) (2026-10-15)
 
 
