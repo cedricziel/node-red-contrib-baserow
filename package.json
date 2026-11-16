@@ -47,7 +47,7 @@
     "mocha": "^11.1.0",
     "node-red": "^5.0.9",
     "node-red-node-test-helper": "^0.3.4",
-    "prettier": "3.9.10"
+    "prettier": "3.10.1"
   },
   "dependencies": {
     "axios": "^1.6.2",
